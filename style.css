@@ -17,8 +17,9 @@ body {
     padding: 20px 100px 20px 100px
 }
 
-#header-logo {
-    font-size: 24px;
+.header-logo img {
+    width: 150px;
+    height: 150px;
 }
 
 .navbar a {
@@ -30,7 +31,12 @@ body {
 .header-links {
     list-style-type: none;
     display: flex;
-    gap: 15px;
+    gap: 50px;
+
+}
+
+.header-links a {
+    font-size: 20px;
 }
 
 /*hero part*/
@@ -41,7 +47,8 @@ body {
     background-color: #1F2937;
     align-items: center;
     justify-content: center;
-    padding: 80px;
+    padding: 70px;
+
 }
 
 .hero-info {
@@ -49,7 +56,8 @@ body {
     flex-direction: column;
     text-align: left;
     font-family: Roboto;
-    margin-right: 60px;
+    margin-right: 10px;
+    width: 30%;
 }
 
 .hero-info button {
@@ -59,11 +67,17 @@ body {
     background-color: #3882f6;
     border: none;
     border-radius: 6px;
+    margin-top: 15px;
     padding: 10px
-
 }
 
-/* content */
+
+.hero-image img {
+    width: 350px;
+    height: 350px;
+}
+
+/* content */   
 .content {
     display: flex;
     flex-direction: column;
@@ -73,7 +87,6 @@ body {
 .content-info {
     display: flex;
     gap: 20px;
-
 }
 
 .content-info img {
@@ -89,30 +102,57 @@ body {
 .container_quote {
     display: flex;
     background-color: #E5E7EB;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 150px;
+    margin-top: 20px;
 }
 
 .container_quote p {
-    font-size: 36px;
+    font-size: 30px;
     color: #1F2937;
     font-style: italic;
     font-weight: lighter;
-    font-family: 'Roboto', arial;
+    font-family: 'Roboto';
+}
+
+.container_quote .author{
+    text-align: right;
 }
 
 .call_to_arms {
     display: flex;
-    align-items;
+    align-items: center;
+    justify-content: space-around;
     background-color: #3882f6;
+    color: #E5E7EB;
+    align-items: center;
+    padding: 10px;
+    margin: 50px 300px;
+}
+
+.call_to_arms .text {
+    color: #fff;
+    text-align: left;
+    flex: 1;
+    margin-left: 50px;
+}
+
+.sign-up {
+    display: block;
+    width: 120px;
+    color: #fff;
+    font-size: 20px;
+    font-family: Roboto;
+    background-color: #3882f6;
+    border-radius: 20px;
+    border-color: #fff;
+    margin-right: 50px;
 }
 
 .footer {
     background-color: #1F2937;
     color: #fff;
     font-family: 'Roboto', arial;
-}
-
-
-img {
-    width: 120px;
-    height: 100px;
+    padding: 2px;
 }
